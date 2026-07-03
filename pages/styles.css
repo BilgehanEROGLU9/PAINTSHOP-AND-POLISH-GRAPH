@@ -1,0 +1,116 @@
+body {
+    background-image: url('../pictures/texture.jpg');
+    color: white;
+    overflow-x: hidden;
+}
+
+.chart-wrapper {
+    display: flex;
+    justify-content: center; /* Center the charts horizontally */
+    align-items: center; /* Center the charts vertically */
+    gap: 20px; /* Add space between the two charts */
+    width: 100%; /* Ensure it takes the full width of the parent */
+    height: 100%; /* Ensure it takes the full height of the parent */
+    /* You can use these properties to control positioning */
+    position: absolute; /* Use absolute positioning if you need specific placement */
+    top: 0px; /* Set vertical position from the top */
+    left: 0px; /* Set horizontal position from the left */
+}
+
+
+text {
+    color: white;
+}
+
+/* Flexbox container for the charts */
+.charts-row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+    gap: 20px; /* Space between charts */
+    justify-content: flex-start;
+    padding: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.chart-container {
+    flex: 0 1 auto; /* Allow the container to shrink or grow */
+    width: 190px; /* Adjust width to fit more charts on the screen */
+    box-sizing: border-box;
+    text-align: center; /* Center-align text */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Flexbox container for the charts */
+.grid-row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+    gap: 20px; /* Space between charts */
+    justify-content: flex-start;
+    padding: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.grid-container {
+    flex: 0 1 auto; /* Allow the container to shrink or grow */
+    width: 190px; /* Adjust width to fit more charts on the screen */
+    box-sizing: border-box;
+    text-align: center; /* Center-align text */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.values-container {
+    margin-left: 150px; /* Adjust margin to fit within the container */
+    color: white;
+    font-size: 18px;
+}
+
+.data-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.data-grid th, .data-grid td {
+    padding: 12px 15px;
+    border: 1px solid #d0d0d0;
+}
+
+.data-grid th {
+    background-color: #00376b;
+    color: rgb(226, 226, 226);
+}
+
+.data-grid tr:nth-child(even) {
+    background-color: #5b5b5b;
+}
+
+.data-grid tr:hover {
+    background-color: #58199c;
+}
+
+
+.canvas-container {
+    width: 50%; /* Adjust width as needed to fit both charts */
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+    color: #ffffff;
+    background-color: #0000A8;
+    padding: 5px 10px 5px 0;
+}
+
+.footer span {
+    margin-right: 20px;
+}
